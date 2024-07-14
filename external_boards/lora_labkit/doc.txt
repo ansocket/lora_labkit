@@ -1,0 +1,19 @@
+/**
+ * @defgroup    boards_lora_labkit LoRa LabKit v1.0
+ * @ingroup     boards
+ * @brief       Support for the LoRa LabKit v1.0 board.
+ *
+ * ### General information
+ *
+ * SibGU's Small Space Satellite lab Development board LoRa Labkit v1.0. Based on RAK3172
+ * MCU STM32WLE5CC 
+ *
+ * ### Pinout
+ *
+ * A detailed description of the board pinout (if available)
+ *
+ * ### Flash the board
+ *
+ * Some notes about how to flash the board
+ *
+ */

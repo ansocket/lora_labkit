@@ -1,0 +1,14 @@
+{
+    "makefile.configurations": [
+        {
+            "name": "Default",
+            "makeArgs": [],
+            "makeDirectory": "app/"
+        }
+    ],
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "cfg_timer_tim2.h": "c",
+        "cfg_rtt_default.h": "c"
+    }
+}
