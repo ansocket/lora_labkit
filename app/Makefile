@@ -6,6 +6,7 @@ BOARD ?= lora_labkit
 
 # This has to be the absolute path to the RIOT base directory:
 RIOTBASE ?= /home/hocok/RIOT_Repo/RIOT
+PROGRAMMER ?= bmp
 
 # required features
 FEATURES_REQUIRED += periph_uart
@@ -18,6 +19,6 @@ DEVELHELP ?= 1
 # Change this to 0 show compiler invocation lines by default:
 QUIET ?= 1
 
-EXTERNAL_BOARD_DIRS = $(CURDIR)/../external_boards
+EXTERNAL_BOARD_DIRS = $(RIOTBASE)/../external_boards
 
 include $(RIOTBASE)/Makefile.include

@@ -7,7 +7,7 @@
         {
             "name": "Cortex Debug",
             "cwd": "${workspaceFolder}",
-            "executable": "./app/bin/lora_labkit/app.elf",
+            "executable": "./RIOT/tests/drivers/sx126x/bin/lora_labkit/tests_sx126x.elf",
             "request": "launch",
             "type": "cortex-debug",
             "runToEntryPoint": "main",
@@ -16,4 +16,5 @@
             "gdbPath": "gdb-multiarch"
         }
     ]
+
 }

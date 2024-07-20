@@ -25,18 +25,13 @@
 #include "periph_cpu.h"
 
 /* Add specific clock configuration (HSE, LSE) for this board here */
-#ifndef CONFIG_BOARD_HAS_LSE
 #define CONFIG_BOARD_HAS_LSE            1
-#endif
 
-/* This board provides a 32MHz HSE oscillator  */
-#ifndef CONFIG_BOARD_HAS_HSE
 #define CONFIG_BOARD_HAS_HSE            1
-#endif
 
-#ifndef CONFIG_CLOCK_HSE
-#define CONFIG_CLOCK_HSE                       MHZ(32)
-#endif
+#define CONFIG_CLOCK_PLL_SRC_HSE        1
+#define CONFIG_CLOCK_HSE                MHZ(32)
+#define CONFIG_USE_CLOCK_PLL            1
 
 #undef RCC_CR_HSEBYPPWR
 

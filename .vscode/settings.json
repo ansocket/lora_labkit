@@ -2,13 +2,21 @@
     "makefile.configurations": [
         {
             "name": "Default",
-            "makeArgs": [],
+            "makeArgs": ["-j6"],
             "makeDirectory": "app/"
+        },
+        {
+            "name": "tests_sx126x",
+            "makeArgs": ["EXTERNAL_BOARD_DIRS=${workspaceFolder}/external_boards", "BOARD=lora_labkit", "-j6","PROGRAMMER=bmp", "LORA_DRIVER=sx126x_stm32wl"],
+            "makeDirectory": "RIOT/tests/drivers/sx126x"
         }
     ],
     "cmake.configureOnOpen": false,
     "files.associations": {
         "cfg_timer_tim2.h": "c",
-        "cfg_rtt_default.h": "c"
+        "cfg_rtt_default.h": "c",
+        "clk_conf.h": "c",
+        "cfg_clock_default.h": "c",
+        "periph_cpu.h": "c"
     }
 }
